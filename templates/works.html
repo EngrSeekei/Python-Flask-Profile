@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+            background-color: #1328e9;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #Link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            margin-top: 20px;
+        }
+
+        #Link a {
+            display: flex;
+            padding: 10px 20px;
+            background-color: #333333;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #Link a:hover {
+            background-color: #9b0f0f;
+            transform: scale(1.2);
+        }
+
+        #Link a:hover::after {
+            content: '(Follow Me)';
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .gallery {
+            max-width: 800px; /* Set a maximum width for the gallery container */
+            margin: auto; /* Center the gallery */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: calc(33.33% - 20px); /* Adjusted width with margin */
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>PHOTOGRAPHER</h1>
+    </nav>
+
+    <p id="Link">
+        <a href="https://www.instagram.com/christiankenneth._/">Instagram Account</a>
+    </p>
+
+    <div class="gallery">
+        <img src="/static/images/photo1.jpg" id="photo1">
+        <img src="/static/images/photo2.jpg" id="photo2">
+        <img src="/static/images/photo3.jpg" id="photo3">
+        <img src="/static/images/photo4.jpg" id="photo4">
+        <img src="/static/images/photo5.jpg" id="photo5">
+        <img src="/static/images/photo6.jpg" id="photo6">
+        <img src="/static/images/photo7.jpg" id="photo7">
+        <img src="/static/images/photo8.jpg" id="photo8">
+       
+    </div>
+</body>
+</html>
